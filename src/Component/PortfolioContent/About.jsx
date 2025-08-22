@@ -4,12 +4,10 @@ import { Download } from "lucide-react";
 
 const About = () => {
 
-  const skillsShow = ["First", "Second", "Third", "Fourth"];
-
   return (
     <>
       {/* Introduction Section */}
-      <div className='flex flex-col justify-between align-middle items-center md:p-[57px] md:flex-row'>
+      <div className='flex flex-col justify-between align-middle items-center relative top-[18px] md:top-[0px] md:p-[57px] md:flex-row'>
         <div className='relative md:top-[70px] text-black w-full dark:text-white'>
 
           {/* Introduction */}
@@ -40,7 +38,7 @@ const About = () => {
             </button>
           </div>
         </div>
-
+ 
         {/* AboutUS Img */}
         <div className='md:relative md:left-[50px]
   border-t-[20px] border-t-transparent 
@@ -52,7 +50,7 @@ const About = () => {
 
       {/* About-Me Section  */}
       <div className='flex flex-col-reverse md:flex-row  mt-20 '>
-        <div className='flex flex-row md:w-[57rem]'>
+        <div className='flex flex-row mt-4 md:mt-0 md:w-[57rem]'>
           <div className='md:relative 
         border-t-[20px] border-t-transparent 
         border-b-[20px] border-b-transparent 
@@ -68,8 +66,8 @@ const About = () => {
           {/* Resume Download */}
           <div className='flex justify-center md:justify-start'>
             <a href="https://drive.google.com/file/d/11vvJmVduGR3IjdnfL3zzO45a2gtXOAz9/view?usp=sharing">
-              <button className="relative flex justify-center  items-center gap-2 w-[160px]  rounded-full  px-6 py-3 mt-4 text-black  bg-white border-2 border-black dark:text-red-500 dark:border-none  transition cursor-pointer">
-                <Download className="w-6 h-6 hover:animate-bounce" />
+              <button className="relative flex justify-center  items-center gap-2 w-[160px]  rounded-full  px-6 py-3 mt-4 text-black  bg-white border-2 border-black dark:text-red-500 dark:border-none  transition cursor-pointer group">
+                <Download className="w-6 h-6 group-hover:animate-bounce" />
                 <span className="font-medium">Resume</span>
               </button>
             </a>
