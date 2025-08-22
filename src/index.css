@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* @media (max-width: 375px) {
+  .Nav-sideBar {
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    position: relative;
+    bottom: 60px;
+  }
+} */
+
+
