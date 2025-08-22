@@ -51,32 +51,35 @@ const About = () => {
       </div>
 
       {/* About-Me Section  */}
-      <div className='flex flex-row  mt-20 '>
-        <div className='flex flex-row w-[57rem]'>
+      <div className='flex flex-col-reverse md:flex-row  mt-20 '>
+        <div className='flex flex-row md:w-[57rem]'>
           <div className='md:relative 
         border-t-[20px] border-t-transparent 
         border-b-[20px] border-b-transparent 
         border-r-[20px] border-r-red-500'>
           </div>
-          <img src="/Img2.png" alt="" className='opacity-100' />
+          <img src="/Img2.png" alt="AboutUSImg" className='w-[93%]' />
         </div>
-        <div className='w-full pr-[20px]'>
-          <h1 className='text-2xl dark:text-white'>About Me</h1>
-          <div className='w-full h-0.5 mb-4 bg-black dark:bg-white'></div>
-          <p className='text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
+        <div className='w-full md:pr-[20px]'>
+          <h1 className='text-center md:text-left text-2xl dark:text-white'>About Me</h1>
+          <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4  '></div>
+          <p className='text-center md:text-left text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
 
           {/* Resume Download */}
-          <a href="https://drive.google.com/file/d/11vvJmVduGR3IjdnfL3zzO45a2gtXOAz9/view?usp=sharing">
-            <button className="relative flex justify-center items-center gap-2 w-[160px]  rounded-full  px-6 py-3 mt-4 text-black  bg-white border-2 border-black dark:text-red-500 dark:border-none  transition cursor-pointer">
-              <Download className="w-6 h-6 hover:animate-bounce" />
-              <span className="font-medium">Resume</span>
-            </button>
-          </a>
+          <div className='flex justify-center md:justify-start'>
+            <a href="https://drive.google.com/file/d/11vvJmVduGR3IjdnfL3zzO45a2gtXOAz9/view?usp=sharing">
+              <button className="relative flex justify-center  items-center gap-2 w-[160px]  rounded-full  px-6 py-3 mt-4 text-black  bg-white border-2 border-black dark:text-red-500 dark:border-none  transition cursor-pointer">
+                <Download className="w-6 h-6 hover:animate-bounce" />
+                <span className="font-medium">Resume</span>
+              </button>
+            </a>
+          </div>
+
 
           <div className='mt-7'>
-            <h1 className='text-black text-2xl dark:text-white'>Education</h1>
-            <div className='w-full h-0.5 mb-4 bg-black dark:bg-white'></div>
-            <ul className='list-disc text-white md:relative left-[16px]'>
+            <h1 className='text-center md:text-left text-black text-2xl dark:text-white'>Education</h1>
+            <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4  '></div>
+            <ul className='text-center text-gray-700 md:text-left list-disc  md:relative left-[16px]  dark:text-white'>
               <li><span className='text-lg font-bold'>B.Tech - </span>Computer Science and Engineering</li>
               <li><span className='text-lg font-bold'>CGPA - </span>8.58</li>
             </ul>
