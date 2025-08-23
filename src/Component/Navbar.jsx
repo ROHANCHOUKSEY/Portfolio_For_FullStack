@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Code, Cross, Folder, Mail, Menu, Palette, User, X } from 'lucide-react';
 import { ThemeContext } from '../ThemeContext/ContextProvider';
+import { Link } from "react-scroll";
 import About from './PortfolioContent/About';
 import Skills from './PortfolioContent/Skills';
 import Project from './PortfolioContent/Project';
@@ -8,13 +9,13 @@ import UiDesign from './PortfolioContent/UiDesign';
 import ContactUs from './PortfolioContent/ContactUs';
 
 const Navbar = () => {
-
+ 
     const { screenMode, darkMode, lightMode } = useContext(ThemeContext);
 
     const [sideBar, setSideBar] = useState(() => {
         const sideBarStore = localStorage.getItem("sideBar")
         return sideBarStore ? JSON.parse(sideBarStore) : "false"
-    });
+    }); 
 
     const [activeTab, setActiveTab] = useState(() => {
         const storeTab = localStorage.getItem("activeTab")
@@ -22,26 +23,6 @@ const Navbar = () => {
     });
 
     console.log("activeTab: ", activeTab);
-
-    //Render-Content Functionality
-    const RenderContent = () => {
-        switch (activeTab) {
-            case "about":
-                return <div><About /></div>
-
-            case "skills":
-                return <div><Skills /></div>
-
-            case "projects":
-                return <div><Project /></div>
-
-            case "ui-design":
-                return <div><UiDesign /></div>
-
-            case "contact-us":
-                return <div><ContactUs /></div>
-        }
-    }
 
     useEffect(() => {
         localStorage.setItem("activeTab", activeTab);
@@ -74,19 +55,29 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex  justify-center align-middle  items-center gap-14 text-black dark:text-white cursor-pointer'>
                     <div className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <li onClick={() => setActiveTab("about")}>About Us</li>
+                        <Link to="about" smooth={true} duration={500} spy={true}>
+                            <li onClick={() => setActiveTab("about")} >About Us</li>
+                        </Link>
                     </div>
                     <div className={`flex justify-center items-center ${activeTab === 'skills' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <li onClick={() => setActiveTab("skills")}>Skills</li>
+                        <Link to="skills" smooth={true} duration={500} spy={true}>
+                            <li onClick={() => setActiveTab("skills")}>Skills</li>
+                        </Link>
                     </div>
                     <div className={`flex justify-center items-center ${activeTab === 'projects' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <li onClick={() => setActiveTab("projects")}>Project</li>
+                        <Link to="project" smooth={true} duration={500} spy={true}>
+                            <li onClick={() => setActiveTab("projects")}>Project</li>
+                        </Link>
                     </div>
                     <div className={`flex justify-center items-center ${activeTab === 'ui-design' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <li onClick={() => setActiveTab("ui-design")}>UI Design</li>
+                        <Link to="uidesign" smooth={true} duration={500} spy={true}>
+                            <li onClick={() => setActiveTab("ui-design")}>UI Design</li>
+                        </Link>
                     </div>
                     <div className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <li onClick={() => setActiveTab("contact-us")}>Contact Us</li>
+                        <Link to="contactus" smooth={true} duration={500} spy={true}>
+                        <li onClick={() => setActiveTab("contact-us")}>Contact Us</li>    
+                        </Link>
                     </div>
                 </ul>
 
@@ -133,33 +124,37 @@ const Navbar = () => {
                     <ul className='flex flex-col gap-6 text-white cursor-pointer relative top-10 text-[15px] md:hidden'>
                         <div className='flex gap-1.5 items-center'>
                             <User size={20} />
-                            <li>About Us</li>
-
+                            <Link to="about" smooth={true} duration={500} spy={true}><li>About Us</li></Link>
+                            
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Code size={20} />
-                            <li>Skills</li>
+                            <Link to="skills" smooth={true} duration={500} spy={true}><li>Skills</li></Link>
+                            
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Folder size={20} />
-                            <li>Project</li>
+                            <Link><li>Project</li></Link>
+                            
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Palette size={20} />
-                            <li>UI Design</li>
-
+                            <Link><li>UI Design</li></Link>
+                        
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Mail size={20} />
-                            <li>Contact Us</li>
+                            <Link><li>Contact Us</li></Link>
+                            
+
                         </div>
                         <label className="inline-flex items-center relative">
                             <input className="peer hidden" id="toggle" onChange={handletoogle} checked={screenMode === "dark"} type="checkbox" />
@@ -196,11 +191,6 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-
-            {/* <div className='relative top-20 z-[-1]'>
-                <div>{RenderContent()}</div>
-            </div> */}
-
         </>
     )
 }

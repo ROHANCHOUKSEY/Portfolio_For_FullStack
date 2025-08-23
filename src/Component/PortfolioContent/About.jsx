@@ -53,15 +53,15 @@ const About = () => {
         <div className='flex flex-row mt-4 md:mt-0 md:w-[57rem]'>
           <div className='md:relative 
         border-t-[20px] border-t-transparent 
-        border-b-[20px] border-b-transparent 
+        border-b-[20px] border-b-transparent  
         border-r-[20px] border-r-red-500'>
           </div>
           <img src="/Img2.png" alt="AboutUSImg" className='w-[93%]' />
         </div>
         <div className='w-full md:pr-[20px]'>
-          <h1 className='text-center md:text-left text-2xl dark:text-white'>About Me</h1>
-          <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4  '></div>
-          <p className='text-center md:text-left text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
+          <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>About Me</h1>
+          <div className='md:w-full h-[2px] w-48 relative left-15 md:left-0 bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
+          <p className='text-center mt-5 md:mt-0 md:text-left text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
 
           {/* Resume Download */}
           <div className='flex justify-center md:justify-start'>
@@ -75,8 +75,8 @@ const About = () => {
 
 
           <div className='mt-7'>
-            <h1 className='text-center md:text-left text-black text-2xl dark:text-white'>Education</h1>
-            <div className='w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4  '></div>
+            <h1 className='text-center mb-4 md:mb-0 md:text-left text-black text-2xl dark:text-white'>Education</h1>
+            <div className='md:w-full h-[2px] w-48 relative left-15 md:left-0 bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4 '></div>
             <ul className='text-center text-gray-700 md:text-left list-disc  md:relative left-[16px]  dark:text-white'>
               <li><span className='text-lg font-bold'>B.Tech - </span>Computer Science and Engineering</li>
               <li><span className='text-lg font-bold'>CGPA - </span>8.58</li>

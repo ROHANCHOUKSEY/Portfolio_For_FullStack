@@ -88,7 +88,7 @@ const Skills = () => {
 
   return (
     <>
-    <section className="w-full py-20 px-4 ">
+    <section className="w-full py-15 px-4 mb-10">
       <div className="max-w-6xl mx-auto">
         <div className='w-full mt-10'>
         <div className="text-center mb-10">
