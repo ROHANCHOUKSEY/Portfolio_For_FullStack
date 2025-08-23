@@ -2,11 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Code, Cross, Folder, Mail, Menu, Palette, User, X } from 'lucide-react';
 import { ThemeContext } from '../ThemeContext/ContextProvider';
 import { Link } from "react-scroll";
-import About from './PortfolioContent/About';
-import Skills from './PortfolioContent/Skills';
-import Project from './PortfolioContent/Project';
-import UiDesign from './PortfolioContent/UiDesign';
-import ContactUs from './PortfolioContent/ContactUs';
 
 const Navbar = () => {
  
@@ -69,9 +64,9 @@ const Navbar = () => {
                             <li onClick={() => setActiveTab("projects")}>Project</li>
                         </Link>
                     </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'ui-design' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
-                        <Link to="uidesign" smooth={true} duration={500} spy={true}>
-                            <li onClick={() => setActiveTab("ui-design")}>UI Design</li>
+                    <div className={`flex justify-center items-center ${activeTab === 'experience' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                        <Link to="experience" smooth={true} duration={500} spy={true}>
+                            <li onClick={() => setActiveTab("experience")}>Experience</li>
                         </Link>
                     </div>
                     <div className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
@@ -145,7 +140,7 @@ const Navbar = () => {
 
                         <div className='flex gap-1.5 items-center'>
                             <Palette size={20} />
-                            <Link><li>UI Design</li></Link>
+                            <Link><li>Experience</li></Link>
                         
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>

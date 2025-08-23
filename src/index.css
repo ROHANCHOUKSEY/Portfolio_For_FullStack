@@ -1,23 +1,24 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
-/* @media (max-width: 375px) {
-  .Nav-sideBar {
-    height: 100vh;
-    width: 200px;
-    display: flex;
-    justify-content: start;
-    padding-left: 10px;
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
   }
-
-  .navbar-list {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    position: relative;
-    bottom: 60px;
+  100% {
+    transform: translateX(-50%);
   }
-} */
+}
 
+.scroll-animation {
+  animation: scrollLeft 70s linear infinite;
+}
 
+/* Pause animation when hovering */
+.animation-paused {
+  animation-play-state: paused !important;
+}
+ 
+.scroll-slider {
+  width: max-content;
+}
