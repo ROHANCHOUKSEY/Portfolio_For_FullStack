@@ -9,7 +9,7 @@ const About = () => {
     <>
       {/* Introduction Section */}
       <div className='flex flex-col justify-between align-middle items-center relative top-[18px] md:top-[0px] md:p-[57px] md:flex-row'>
-        <div className='relative md:top-[70px] text-black w-full dark:text-white'>
+        <div className='relative top-[55px] md:top-[70px] text-black w-full dark:text-white'>
 
           {/* Introduction */}
           <h4 className='text-center md:text-left text-2xl font-bold text-red-500'>Hello, I'm Rohan Chouksey</h4>
@@ -43,7 +43,7 @@ const About = () => {
         </div>
 
         {/* AboutUS Img */}
-        <div className='md:relative md:left-[50px]
+        <div className='relative top-[49px] md:top-[0px] md:left-[50px]
   border-t-[20px] border-t-transparent 
   border-b-[20px] border-b-transparent 
   border-r-[20px] border-r-red-500'>

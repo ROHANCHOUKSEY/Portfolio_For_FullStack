@@ -133,21 +133,21 @@ const Navbar = () => {
 
                         <div className='flex gap-1.5 items-center'>
                             <Folder size={20} />
-                            <Link><li>Project</li></Link>
+                            <Link to="project" smooth={true} duration={500} spy={true}><li>Project</li></Link>
                             
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Palette size={20} />
-                            <Link><li>Experience</li></Link>
+                            <Link to="experience" smooth={true} duration={500} spy={true}><li>Experience</li></Link>
                         
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Mail size={20} />
-                            <Link><li>Contact Us</li></Link>
+                            <Link to="contactus" smooth={true} duration={500} spy={true}><li>Contact Us</li></Link>
                             
 
                         </div>
