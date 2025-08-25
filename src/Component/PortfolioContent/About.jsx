@@ -66,7 +66,7 @@ const About = () => {
             <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>About Me</h1>
             <div className='md:w-full h-[2px] w-48  bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
           </div>
-          <p className='text-center mt-5 md:mt-0 md:text-left text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
+          <p className='text-center px-1 md:px-0 mt-5 md:px=0 md:mt-0 md:text-left text-gray-700 dark:text-white leading-7 tracking-tight'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
 
           {/* Resume Download */}
           <div className='flex justify-center md:justify-start'>
