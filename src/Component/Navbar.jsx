@@ -46,7 +46,7 @@ const Navbar = () => {
     return (
         <>
             <div className="flex justify-between z-10 items-center w-full h-[60px] px-6 bg-white shadow-xl/30 shadow-gray-400 fixed dark:bg-black">
-                <h1>Logo</h1>
+                <h3 className='text-gray-700 dark:text-white font-bold'>ROHAN CHOUKSEY</h3>
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex  justify-center align-middle  items-center gap-14 text-black dark:text-white cursor-pointer'>
                     <div className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>

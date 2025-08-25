@@ -3,6 +3,9 @@ import { Element } from 'react-scroll'
 import About from './About'
 import Skills from './Skills'
 import Project from './Project'
+import Experience from './Experience'
+import ContactUs from './ContactUs'
+import Footer from './Footer'
 
 const AllContent = () => {
     return (
@@ -17,6 +20,13 @@ const AllContent = () => {
                 <Element name='project'>
                     <Project/>
                 </Element>
+                <Element name='experience'>
+                    <Experience/>
+                </Element>
+                <Element name='contactus'>
+                    <ContactUs/>
+                </Element>
+                <Footer/>
             </div>
         </>
     )

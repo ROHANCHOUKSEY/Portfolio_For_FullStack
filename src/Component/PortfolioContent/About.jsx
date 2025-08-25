@@ -1,6 +1,7 @@
 import React from 'react'
 import { ReactTyped } from "react-typed"
 import { Download } from "lucide-react";
+import { Link } from "react-scroll";
 
 const About = () => {
 
@@ -33,12 +34,14 @@ const About = () => {
 
           {/* ContactUs Button */}
           <div className='flex justify-center md:justify-start'>
-            <button className="flex justify-center items-center text-base font-medium mt-5 h-10 w-30 bg-red-500 text-white  dark:bg-white rounded-sm cursor-pointer dark:text-red-500 shadow-lg transform transition-transform duration-200 hover:scale-105 hover:shadow-xl">
-              ContactUs
-            </button>
+            <Link to="contactus" smooth={true} duration={500} spy={true}>
+              <button className="flex justify-center items-center text-base font-medium mt-5 h-10 w-30 bg-red-500 text-white  dark:bg-white rounded-sm cursor-pointer dark:text-red-500 shadow-lg transform transition-transform duration-200 hover:scale-105 hover:shadow-xl">
+                ContactUs
+              </button>
+            </Link>
           </div>
         </div>
- 
+
         {/* AboutUS Img */}
         <div className='md:relative md:left-[50px]
   border-t-[20px] border-t-transparent 
@@ -59,8 +62,10 @@ const About = () => {
           <img src="/Img2.png" alt="AboutUSImg" className='w-[93%]' />
         </div>
         <div className='w-full md:pr-[20px]'>
-          <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>About Me</h1>
-          <div className='md:w-full h-[2px] w-48 relative left-15 md:left-0 bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
+          <div className='flex flex-col items-center md:items-start'>
+            <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>About Me</h1>
+            <div className='md:w-full h-[2px] w-48  bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
+          </div>
           <p className='text-center mt-5 md:mt-0 md:text-left text-gray-700 dark:text-white leading-7'>My name is Rohan Chouksey, and I am a passionate Full-Stack and Frontend Developer focused on building fully responsive, dynamic, and user-friendly websites. I enjoy creating modern interfaces, optimizing performance, and ensuring seamless cross-device experiences. I also work with Figma to design engaging UI/UX that blends creativity with functionality, allowing me to develop applications that are both intuitive and visually compelling.</p>
 
           {/* Resume Download */}
@@ -75,8 +80,10 @@ const About = () => {
 
 
           <div className='mt-7'>
-            <h1 className='text-center mb-4 md:mb-0 md:text-left text-black text-2xl dark:text-white'>Education</h1>
-            <div className='md:w-full h-[2px] w-48 relative left-15 md:left-0 bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4 '></div>
+            <div className='flex flex-col items-center md:items-start'>
+              <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>Education</h1>
+              <div className='md:w-full h-[2px] w-48  bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
+            </div>
             <ul className='text-center text-gray-700 md:text-left list-disc  md:relative left-[16px]  dark:text-white'>
               <li><span className='text-lg font-bold'>B.Tech - </span>Computer Science and Engineering</li>
               <li><span className='text-lg font-bold'>CGPA - </span>8.58</li>
