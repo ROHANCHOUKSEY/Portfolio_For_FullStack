@@ -16,7 +16,7 @@ const UiDesign = () => {
     { img: "/UIDesigns/17.png" },
   ]
 
-  return (
+  return (   
     <>
     <section className='w-full py-15 px-4 mb-0'>
       <div className="text-center mb-5">

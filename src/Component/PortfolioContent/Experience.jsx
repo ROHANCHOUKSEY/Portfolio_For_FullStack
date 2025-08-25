@@ -1,7 +1,7 @@
 import { Briefcase } from 'lucide-react'
 import React from 'react'
 
-const Experience = () => {
+const Experience = () => { 
     return (
         <>
             <section className='w-full py-15 px-4 mb-10'>
