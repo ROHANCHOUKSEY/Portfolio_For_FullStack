@@ -1,7 +1,7 @@
 import { Briefcase } from 'lucide-react'
 import React from 'react'
 
-const Experience = () => { 
+const Experience = () => {
     return (
         <>
             <section className='w-full py-15 px-4 mb-10'>
@@ -19,11 +19,13 @@ const Experience = () => {
                                 <div className='absolute w-8 h-8 bg-red-500 rounded-full opacity-30 animate-ping'></div>
                                 <div className='bg-red-500 w-4 h-4  rounded-full  shadow-[-1px_-2px_20px_8px_red]'></div>
                             </div>
-                            <div className='bg-white w-1 h-295 md:h-90  rounded-full shadow-[0px_-8px_10px_0px_rgba(0,_0,_0,_0.35)]'></div>
+                            <div className='max-h-full'>
+                                <p className='bg-white w-1 h-220 sm:h-90 md:h-95 rounded-full shadow-[0px_-8px_10px_0px_rgba(0,_0,_0,_0.35)]'></p>
+                            </div>
                         </div>
                         <div className='text-white flex flex-col gap-2'>
                             <h1 className=' flex gap-2 text-gray-700 dark:text-white items-center text-base md:text-2xl  font-bold'>Frontend Developer
-                                <Briefcase  className='relative md:top-1'/>
+                                <Briefcase className='relative md:top-1' />
                             </h1>
                             <h4 className='text-red-300 font-medium'>Cyber Instant Pvt. Ltd</h4>
                             <p className='text-gray-700 dark:text-white'>During my internship at Cyber Instant Pvt. Ltd, I worked as a Frontend Developer, where I gained hands-on experience in building and optimizing modern, responsive, and user-friendly web applications. My role primarily focused on implementing intuitive UI designs and ensuring seamless functionality across devices.</p>
