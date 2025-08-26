@@ -45,31 +45,31 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex justify-between z-10 items-center w-full h-[60px] px-6 bg-white shadow-xl/30 shadow-gray-400 fixed dark:bg-black">
+            <div className="flex justify-between z-10 items-center w-full h-[60px] px-6 bg-white shadow-xl/10 shadow-gray-400 fixed dark:bg-black">
                 <h3 className='text-gray-700 dark:text-white font-bold'>ROHAN CHOUKSEY</h3>
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex  justify-center align-middle  items-center gap-14 text-black dark:text-white cursor-pointer'>
-                    <div className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                    <div className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
                         <Link to="about" smooth={true} duration={500} spy={true}>
                             <li onClick={() => setActiveTab("about")} >About Us</li>
                         </Link>
                     </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'skills' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                    <div className={`flex justify-center items-center ${activeTab === 'skills' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
                         <Link to="skills" smooth={true} duration={500} spy={true}>
                             <li onClick={() => setActiveTab("skills")}>Skills</li>
                         </Link>
                     </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'projects' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                    <div className={`flex justify-center items-center ${activeTab === 'projects' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
                         <Link to="project" smooth={true} duration={500} spy={true}>
                             <li onClick={() => setActiveTab("projects")}>Project</li>
                         </Link>
                     </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'experience' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                    <div className={`flex justify-center items-center ${activeTab === 'experience' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
                         <Link to="experience" smooth={true} duration={500} spy={true}>
                             <li onClick={() => setActiveTab("experience")}>Experience</li>
                         </Link>
                     </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : ""} w-25 h-10 rounded-sm`}>
+                    <div className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
                         <Link to="contactus" smooth={true} duration={500} spy={true}>
                         <li onClick={() => setActiveTab("contact-us")}>Contact Us</li>    
                         </Link>

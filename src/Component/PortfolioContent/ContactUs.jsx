@@ -36,7 +36,7 @@ const ContactUs = () => {
         <div className='text-center mb-10'>
           <h1 className='text-black dark:text-white text-4xl md:text-5xl font-bold mb-4'>CONTACT ME</h1>
           <div className="mx-auto mt-2 h-1 w-48 bg-gradient-to-r from-transparent via-red-500 to-transparent rounded-full"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-6 max-w-2xl mx-auto">
             Let's connect! I'm always open to discussing new opportunities and creative projects.
           </p>
         </div>
@@ -48,16 +48,16 @@ const ContactUs = () => {
                 <input className='bg-gray-50  dark:bg-neutral-800 border-2 border-gray-300 dark:border-none  p-4   pl-12 pr-4 py-4 rounded-xl w-full placeholder:opacity-40 dark:text-white  placeholder:text-gray-700 dark:placeholder:opacity-30  dark:placeholder:text-white focus:outline-hidden' name='userName' value={userDetail.userName} onChange={handleSubmit} id='userId' type="text" placeholder='Enter your name' required />
               </div>
               <div className='relative w-full'>
-                <Mail className='absolute left-4 top-4/12 text-gray-700  dark:text-white opacity-30' />
+                <Mail className='absolute left-4 top-4/13 text-gray-700  dark:text-white opacity-30' />
                 <input className='bg-gray-50  dark:bg-neutral-800  border-2 border-gray-300 dark:border-none p-4 pl-13 pr-4 py-4 rounded-xl  w-full placeholder:opacity-40 dark:text-white  placeholder:text-gray-700 dark:placeholder:opacity-30 dark:placeholder:text-white  focus:outline-hidden' name='userEmail' value={userDetail.userEmail} onChange={handleSubmit} id='userEmail' type="email" placeholder='Enter your email' required />
               </div>
             </div>
             <div className='relative m-auto w-full'>
-              <FileText className='absolute left-4 top-4/12 text-gray-700  dark:text-white opacity-30' />
+              <FileText className='absolute left-4 top-4/13 text-gray-700  dark:text-white opacity-30' />
               <input className='bg-gray-50  dark:bg-neutral-800  border-2 border-gray-300 dark:border-none p-4 pl-12  rounded-xl w-full placeholder:opacity-40 dark:text-white placeholder:text-gray-700 dark:placeholder:opacity-30  dark:placeholder:text-white  focus:outline-none' name='userSubject' value={userDetail.userSubject} onChange={handleSubmit} id='userSubject' type="text" placeholder='Enter your subject' />
             </div>
             <div className='relative m-auto w-full'>
-              <FileText className='absolute left-4 top-4/30 text-gray-700  dark:text-white opacity-30' />
+              <FileText className='absolute left-4 top-4/32 text-gray-700  dark:text-white opacity-30' />
               <textarea className=' bg-gray-50  dark:bg-neutral-800  border-2 border-gray-300 dark:border-none p-4 pl-13 rounded-2xl w-full placeholder:opacity-40 dark:text-white  placeholder:text-gray-700 dark:placeholder:opacity-30 dark:placeholder:text-white focus:outline-none' rows={4} name='userMessage' value={userDetail.userMessage} onChange={handleSubmit} id="userMessage" placeholder='Write your message' required></textarea>
             </div>
             <div className='flex justify-center'>

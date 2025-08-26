@@ -80,11 +80,11 @@ const About = () => {
 
 
           <div className='mt-7'>
-            <div className='flex flex-col items-center md:items-start'>
+            <div className='flex flex-col items-center md:items-start '>
               <h1 className='text-center mb-4 md:mb-0 md:text-left text-2xl dark:text-white'>Education</h1>
               <div className='md:w-full h-[2px] w-48  bg-gradient-to-r from-transparent via-red-500 to-transparent md:bg-none md:bg-black dark:md:bg-white  md:h-0.5 md:mb-4'></div>
             </div>
-            <ul className='text-center text-gray-700 md:text-left list-disc  md:relative left-[16px]  dark:text-white'>
+            <ul className='text-center text-gray-700 md:text-left list-disc  md:relative left-[16px]  dark:text-white mt-2 md:mt-0'>
               <li><span className='text-lg font-bold'>B.Tech - </span>Computer Science and Engineering</li>
               <li><span className='text-lg font-bold'>CGPA - </span>8.58</li>
             </ul>

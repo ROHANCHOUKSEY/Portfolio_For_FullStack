@@ -45,7 +45,7 @@ const Project = () => {
         <div className='text-center mb-10'>
           <h1 className='text-black dark:text-white text-4xl md:text-5xl font-bold mb-4'>PROJECTS</h1>
           <div className="mx-auto mt-2 h-1 w-48 bg-gradient-to-r from-transparent via-red-500 to-transparent rounded-full"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-6 max-w-2xl mx-auto">
             Projects that showcase my work and creativity
           </p>
         </div>

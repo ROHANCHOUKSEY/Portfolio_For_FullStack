@@ -18,11 +18,11 @@ const UiDesign = () => {
 
   return (   
     <>
-    <section className='w-full py-15 px-4 mb-0'>
+    <section className='w-full mt-6 px-4'>
       <div className="text-center mb-5">
           <h1 className='text-black dark:text-white text-4xl md:text-5xl font-bold mb-4'>UI DESIGNS</h1>
           <div className="mx-auto mt-2 h-1 w-48 bg-gradient-to-r from-transparent via-red-500 to-transparent rounded-full"></div>
-          <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-gray-500 mt-6 max-w-2xl mx-auto">
             A collection of my UI/UX design work and concepts          
           </p>
       </div>
