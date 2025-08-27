@@ -6,7 +6,7 @@ const ContextProvider = (props) => {
 
     const [screenMode, setScreenMode] = useState(() => {
         const storeMode = localStorage.getItem("screenMode")
-        return storeMode ? JSON.parse(storeMode) : "light"
+        return storeMode ? JSON.parse(storeMode) : "dark"
     });
 
     const darkMode = () => {
