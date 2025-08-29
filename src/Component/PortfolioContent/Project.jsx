@@ -33,7 +33,7 @@ const Project = () => {
       name: "ChatHub",
       img: "/Project3.png",
       description: "ChatHub is a real-time chat application that allows users to communicate with each other through text messages and share images. The primary goal was to create a seamless and user-friendly chat experience for individual.",
-      GitHub: "https://github.com/ROHANCHOUKSEY/new_shopping",
+      GitHub: "https://github.com/ROHANCHOUKSEY/ChatHub",
       Live: "",
       technologies: ["React", "JavaScript", "Firebase", "CSS"]
     },
