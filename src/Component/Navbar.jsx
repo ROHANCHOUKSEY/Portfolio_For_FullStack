@@ -4,13 +4,13 @@ import { ThemeContext } from '../ThemeContext/ContextProvider';
 import { Link } from "react-scroll";
 
 const Navbar = () => {
- 
+
     const { screenMode, darkMode, lightMode } = useContext(ThemeContext);
 
     const [sideBar, setSideBar] = useState(() => {
         const sideBarStore = localStorage.getItem("sideBar")
         return sideBarStore ? JSON.parse(sideBarStore) : "false"
-    }); 
+    });
 
     const [activeTab, setActiveTab] = useState(() => {
         const storeTab = localStorage.getItem("activeTab")
@@ -49,31 +49,37 @@ const Navbar = () => {
                 <h3 className='text-gray-700 dark:text-white font-bold'>ROHAN CHOUKSEY</h3>
                 {/* Desktop Menu */}
                 <ul className='hidden md:flex  justify-center align-middle  items-center gap-14 text-black dark:text-white cursor-pointer'>
-                    <div className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
-                        <Link to="about" smooth={true} duration={500} spy={true}>
-                            <li onClick={() => setActiveTab("about")} >About Us</li>
-                        </Link>
-                    </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'skills' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
-                        <Link to="skills" smooth={true} duration={500} spy={true}>
-                            <li onClick={() => setActiveTab("skills")}>Skills</li>
-                        </Link>
-                    </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'projects' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
-                        <Link to="project" smooth={true} duration={500} spy={true}>
-                            <li onClick={() => setActiveTab("projects")}>Project</li>
-                        </Link>
-                    </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'experience' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
-                        <Link to="experience" smooth={true} duration={500} spy={true}>
-                            <li onClick={() => setActiveTab("experience")}>Experience</li>
-                        </Link>
-                    </div>
-                    <div className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : "hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
-                        <Link to="contactus" smooth={true} duration={500} spy={true}>
-                        <li onClick={() => setActiveTab("contact-us")}>Contact Us</li>    
-                        </Link>
-                    </div>
+
+                    <Link to="about" smooth={true} duration={500} spy={true}>
+                        <div onClick={() => setActiveTab("about")} className={`flex justify-center items-center ${activeTab === 'about' ? "bg-red-600 text-white" : "hover:bg-gray-200 dark:hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
+                            <li>About Us</li>
+                        </div>
+                    </Link>
+
+                    <Link to="skills" smooth={true} duration={500} spy={true}>
+                        <div onClick={() => setActiveTab("skills")} className={`flex justify-center items-center ${activeTab === 'skills' ? "bg-red-600 text-white" : "hover:bg-gray-200 dark:hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
+                            <li>Skills</li>
+                        </div>
+                    </Link>
+
+                    <Link to="project" smooth={true} duration={500} spy={true}>
+                        <div onClick={() => setActiveTab("projects")} className={`flex justify-center items-center ${activeTab === 'projects' ? "bg-red-600 text-white" : "hover:bg-gray-200 dark:hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
+                            <li>Project</li>
+                        </div>
+                    </Link>
+
+                    <Link to="experience" smooth={true} duration={500} spy={true}>
+                        <div onClick={() => setActiveTab("experience")} className={`flex justify-center items-center ${activeTab === 'experience' ? "bg-red-600 text-white" : "hover:bg-gray-200 dark:hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
+                            <li>Experience</li>
+                        </div>
+                    </Link>
+
+                    <Link to="contactus" smooth={true} duration={500} spy={true}>
+                        <div onClick={() => setActiveTab("contact-us")} className={`flex justify-center items-center ${activeTab === 'contact-us' ? "bg-red-600 text-white" : "hover:bg-gray-200 dark:hover:bg-white/10"} w-25 h-10 border-white  rounded-sm  delay-100  transition-all  duration-300  hover:ease-in-out  hover:scale-105`}>
+                            <li>Contact Us</li>
+                        </div>
+                    </Link>
+
                 </ul>
 
                 {/* ScreenMode Button */}
@@ -120,35 +126,35 @@ const Navbar = () => {
                         <div className='flex gap-1.5 items-center'>
                             <User size={20} />
                             <Link to="about" smooth={true} duration={500} spy={true}><li>About Us</li></Link>
-                            
+
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Code size={20} />
                             <Link to="skills" smooth={true} duration={500} spy={true}><li>Skills</li></Link>
-                            
+
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Folder size={20} />
                             <Link to="project" smooth={true} duration={500} spy={true}><li>Project</li></Link>
-                            
+
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Briefcase size={20} />
                             <Link to="experience" smooth={true} duration={500} spy={true}><li>Experience</li></Link>
-                        
+
                         </div>
                         <span className='w-full h-[1px] bg-gray-700'></span>
 
                         <div className='flex gap-1.5 items-center'>
                             <Mail size={20} />
                             <Link to="contactus" smooth={true} duration={500} spy={true}><li>Contact Us</li></Link>
-                            
+
 
                         </div>
                         <label className="inline-flex items-center relative">
