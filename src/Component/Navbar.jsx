@@ -90,7 +90,7 @@ const Navbar = () => {
                     ></div>
                     <svg
                         height="0"
-                        width="100"
+                        width="100" 
                         viewBox="0 0 24 24"
                         data-name="Layer 1"
                         id="Layer_1"
