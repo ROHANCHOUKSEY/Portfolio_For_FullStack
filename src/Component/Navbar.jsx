@@ -19,7 +19,7 @@ const Navbar = () => {
 
     console.log("activeTab: ", activeTab);
 
-    useEffect(() => {
+    useEffect(() => { 
         localStorage.setItem("activeTab", activeTab);
     }, [activeTab])
 
