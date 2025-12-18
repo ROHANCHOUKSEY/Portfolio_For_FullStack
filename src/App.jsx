@@ -3,6 +3,7 @@ import Navbar from './Component/Navbar'
 import { ThemeContext } from './ThemeContext/ContextProvider'
 import About from './Component/PortfolioContent/About';
 import AllContent from './Component/PortfolioContent/AllContent';
+import Snowfall from 'react-snowfall';
 
 const App = () => {
 
