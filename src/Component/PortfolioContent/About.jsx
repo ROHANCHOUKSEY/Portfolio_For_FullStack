@@ -2,14 +2,14 @@ import React from 'react'
 import { ReactTyped } from "react-typed"
 import { Download } from "lucide-react";
 import { Link } from "react-scroll";
-import Snowfall from 'react-snowfall';
+// import Snowfall from 'react-snowfall';
 
 const About = () => {
 
   return (
     <>
       {/* Introduction Section */}
-      <Snowfall color='#82C3D9' />
+      {/* <Snowfall color='#82C3D9' /> */}
       <div className='flex flex-col justify-between align-middle items-center relative top-[18px] md:top-[0px] md:p-[57px] md:flex-row'>
         <div className='relative top-[55px] md:top-[70px] text-black w-full dark:text-white'>
 
