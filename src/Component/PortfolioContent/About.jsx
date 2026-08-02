@@ -72,7 +72,7 @@ const About = () => {
 
           {/* Resume Download */}
           <div className='flex justify-center md:justify-start'>
-            <a href="https://drive.google.com/file/d/1fvsGl-owq4BydRw5yUgCp1gRmDgxVyx0/view">
+            <a href="https://drive.google.com/file/d/1P8D7GhSwKG95iJ3o-D-8VHhj4_PDBIyO/view?usp=sharing">
               <button className="relative flex justify-center  items-center gap-2 w-[160px]  rounded-full  px-6 py-3 mt-4 text-black  bg-white border-2 border-black dark:text-red-500 dark:border-none  transition cursor-pointer group">
                 <Download className="w-6 h-6 group-hover:animate-bounce" />
                 <span className="font-medium">Resume</span>

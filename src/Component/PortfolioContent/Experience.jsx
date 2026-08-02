@@ -57,6 +57,85 @@ const Experience = () => {
                             </ul>
                         </div>
                     </div>
+                    <div className='flex flex-row items-baseline justify-start gap-10 border-none md:px-[180px]'>
+
+                        {/* Timeline */}
+                        <div className='flex flex-col items-center gap-3'>
+                            <div className='relative flex justify-center items-center'>
+                                <div className='absolute w-8 h-8 bg-red-500 rounded-full opacity-30 animate-ping'></div>
+
+                                <div className='bg-red-500 w-4 h-4 rounded-full shadow-[-1px_-2px_20px_8px_red]'></div>
+                            </div>
+
+                            <div className='max-h-full'>
+                                <p className='bg-white w-1 h-220 sm:h-90 md:h-95 rounded-full shadow-[0px_-8px_10px_0px_rgba(0,_0,_0,_0.35)]'></p>
+                            </div>
+                        </div>
+
+                        {/* Experience Content */}
+                        <div className='text-white flex flex-col gap-2'>
+
+                            <h1 className='flex gap-2 text-gray-700 dark:text-white items-center text-base md:text-2xl font-bold'>
+                                Software Development Engineer – Trainee
+
+                                <Briefcase className='relative md:top-1' />
+                            </h1>
+
+                            <h4 className='text-red-300 font-medium'>
+                                Pixel Tech Pvt. Ltd. | March 2026 – Present
+                            </h4>
+
+                            <p className='text-gray-700 dark:text-white'>
+                                As a Software Development Engineer – Trainee at Pixel Tech Pvt. Ltd.,
+                                I contribute to the development and maintenance of scalable backend
+                                services for DuoChat. My role focuses on designing robust RESTful APIs,
+                                implementing backend features using NestJS, and writing clean,
+                                maintainable, and reusable code.
+                            </p>
+
+                            <ul>
+
+                                <li className="flex items-start gap-2 mb-3">
+                                    <span className="text-red-500 text-lg">➤</span>
+
+                                    <p className='text-gray-700 dark:text-white'>
+                                        Designed and developed scalable backend architecture for
+                                        DuoChat using NestJS and RESTful API principles.
+                                    </p>
+                                </li>
+
+                                <li className="flex items-start gap-2 mb-3">
+                                    <span className="text-red-500 text-lg">➤</span>
+
+                                    <p className='text-gray-700 dark:text-white'>
+                                        Built clean, efficient, reusable, and maintainable backend
+                                        services to develop robust and high-performance REST APIs.
+                                    </p>
+                                </li>
+
+                                <li className="flex items-start gap-2 mb-3">
+                                    <span className="text-red-500 text-lg">➤</span>
+
+                                    <p className='text-gray-700 dark:text-white'>
+                                        Worked on the Meta Catalog feature, implementing end-to-end
+                                        functionality for catalog creation, product addition, and
+                                        catalog set management.
+                                    </p>
+                                </li>
+
+                                <li className="flex items-start gap-2 mb-3">
+                                    <span className="text-red-500 text-lg">➤</span>
+
+                                    <p className='text-gray-700 dark:text-white'>
+                                        Collaborated with team members to understand business
+                                        requirements, develop backend functionality, and ensure
+                                        reliable integration across the platform.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
